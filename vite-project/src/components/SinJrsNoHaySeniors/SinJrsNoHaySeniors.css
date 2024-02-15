@@ -1,0 +1,55 @@
+.banner3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.banner3-container {
+  background-color: #e2f2fe;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.text-banner3 {
+  font-size: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* laptop */
+@media screen and (min-width: 768px) {
+  .banner3 {
+    width: 70%;
+  }
+}
+
+/* celular */
+@media screen and (max-width: 767px) {
+  .banner3 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
